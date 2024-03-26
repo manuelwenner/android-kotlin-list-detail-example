@@ -1,7 +1,5 @@
 package de.manuelwenner.locations
 
-import android.widget.ListAdapter
-
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View

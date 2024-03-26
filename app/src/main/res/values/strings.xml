@@ -2,5 +2,4 @@
     <string name="app_name">Locations Tracker</string>
     <string name="duration_placeholder">Duration: %s</string>
     <string name="distance_placeholder">Distance: %s</string>
-
 </resources>
