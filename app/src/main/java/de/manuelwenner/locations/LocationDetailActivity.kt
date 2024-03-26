@@ -1,7 +1,6 @@
 package de.manuelwenner.locations
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -12,14 +11,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.painterResource
@@ -50,14 +46,6 @@ class LocationDetailActivity : AppCompatActivity() {
                 LocationDetailScreen(location = location!!)
             }
         }
-
-//        findViewById<TextView>(R.id.tvDurationHeader).text =
-//            getString(R.string.duration_placeholder, location?.duration)
-//        findViewById<TextView>(R.id.tvDistanceHeader).text =
-//            getString(R.string.distance_placeholder, location?.distance)
-//        findViewById<TextView>(R.id.tvDateHeader).text = location?.date
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -91,22 +79,18 @@ class LocationDetailActivity : AppCompatActivity() {
                 Text(
                     text = "Duration: ${duration.value}",
                     modifier = Modifier.weight(1f),
-                    color = Color.White
                 )
                 Text(
                     text = "Distance: ${distance.value}",
                     modifier = Modifier.weight(1f),
                     textAlign = TextAlign.Center,
-                    color = Color.White
                 )
                 Text(
                     text = "Distance: ${date.value}",
                     modifier = Modifier.weight(1f),
                     textAlign = TextAlign.End,
-                    color = Color.White
                 )
             }
         }
     }
-
 }
